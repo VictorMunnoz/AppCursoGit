@@ -2,8 +2,6 @@
 
 namespace Nuvo.Domain.Entities
 {
-
-    //Se agrega comentario: Víctor Gallegos 21/05/1993
     internal class Usuario
     {
         [Key]     
@@ -24,8 +22,11 @@ namespace Nuvo.Domain.Entities
         [StringLength(300)]
         public string? Puesto { get; set; }
 
-        //TODO: ESTA PROPIEDAD ES LA RELACION CON TETANT
+        [Required]
         public Guid TenantId { get; set; }
+
+        [StringLength(20)]
+        public string? PhoneNumber { get; set; }
 
         public string GetInfo() => $"Id: {Id} Nombre: {Nombre} Apellido: {Apellido} NombreDeUsuario: {NombreDeUsuario}";
     }
