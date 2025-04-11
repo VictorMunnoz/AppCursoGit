@@ -24,6 +24,8 @@ namespace Nuvo.Domain.Entities
         [StringLength(300)]
         public string? Puesto { get; set; }
 
+        public Guid TenantId { get; set; }
+
         public string GetInfo() => $"Id: {Id} Nombre: {Nombre} Apellido: {Apellido} NombreDeUsuario: {NombreDeUsuario}";
     }
 }
