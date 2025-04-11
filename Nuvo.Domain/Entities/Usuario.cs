@@ -3,7 +3,7 @@
 namespace Nuvo.Domain.Entities
 {
 
-    //Se agrega comentario: Víctor Gallegos
+    //Se agrega comentario: Víctor Gallegos 21/05/1993
     internal class Usuario
     {
         [Key]     
