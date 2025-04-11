@@ -1,0 +1,6 @@
+@Nuvo_HostAddress = http://localhost:5257
+
+GET {{Nuvo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
