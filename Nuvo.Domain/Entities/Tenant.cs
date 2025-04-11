@@ -10,5 +10,6 @@ namespace Nuvo.Domain.Entities
         [StringLength(200)]
         public required string Nombre { get; set; }
         public DateTime? CreateDate { get; set; }
+        public string UsuarioId { get; set; }
     }
 }
