@@ -24,6 +24,7 @@ namespace Nuvo.Domain.Entities
         [StringLength(300)]
         public string? Puesto { get; set; }
 
+        //TODO: ESTA PROPIEDAD ES LA RELACION CON TETANT
         public Guid TenantId { get; set; }
 
         public string GetInfo() => $"Id: {Id} Nombre: {Nombre} Apellido: {Apellido} NombreDeUsuario: {NombreDeUsuario}";
