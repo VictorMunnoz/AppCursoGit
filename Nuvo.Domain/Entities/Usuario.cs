@@ -25,9 +25,6 @@ namespace Nuvo.Domain.Entities
         [Required]
         public Guid TenantId { get; set; }
 
-        [StringLength(20)]
-        public string? PhoneNumber { get; set; }
-
         public string GetInfo() => $"Id: {Id} Nombre: {Nombre} Apellido: {Apellido} NombreDeUsuario: {NombreDeUsuario}";
     }
 }
