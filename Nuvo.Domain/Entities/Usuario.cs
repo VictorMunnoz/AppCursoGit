@@ -25,6 +25,8 @@ namespace Nuvo.Domain.Entities
         [Required]
         public Guid TenantId { get; set; }
 
+        public int Intentos { get; set; }
+
         public string GetInfo() => $"Id: {Id} Nombre: {Nombre} Apellido: {Apellido} NombreDeUsuario: {NombreDeUsuario}";
     }
 }
