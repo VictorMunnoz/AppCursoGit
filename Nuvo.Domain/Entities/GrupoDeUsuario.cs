@@ -9,5 +9,10 @@ namespace Nuvo.Domain.Entities
 
         [StringLength(100)]
         public required string Nombre { get; set; }
+
+        public Guid TenantId { get; set; }
+        public DateTime CreateDate { get; set; }
+        public DateTime? FechaDeActualizacion { get; set; }
+
     }
 }
