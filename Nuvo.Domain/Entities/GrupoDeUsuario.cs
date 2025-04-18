@@ -12,5 +12,6 @@ namespace Nuvo.Domain.Entities
 
         public Guid TenantId { get; set; }
         public DateTime? CreateDate { get; set; }
+        public DateTime? UpdateDate { get; set; }
     }
 }
